@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_ASSIGNMENT4
 {
-    public partial class Form1 : Form
+    public partial class BMICalculatorApp : Form
     {
-        public Form1()
+        public BMICalculatorApp()
         {
             InitializeComponent();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
