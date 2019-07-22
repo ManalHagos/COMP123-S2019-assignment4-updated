@@ -10,7 +10,12 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_ASSIGNMENT4
 {
-    //Manal Hagos
+    /*Manal Hagos
+     301027317
+     22/7/2019
+     BMI calculator
+     form1 functions*/
+
     public partial class BMICalculatorApp : Form
     {
 
