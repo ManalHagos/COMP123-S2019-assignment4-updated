@@ -51,9 +51,9 @@
             this.DepatmentOfHealth.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.DepatmentOfHealth.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.DepatmentOfHealth.Controls.Add(this.theResult, 1, 0);
-            this.DepatmentOfHealth.Controls.Add(this.scaleTextbox, 0, 1);
             this.DepatmentOfHealth.Controls.Add(this.scale, 0, 0);
             this.DepatmentOfHealth.Controls.Add(this.resultTextbox, 1, 1);
+            this.DepatmentOfHealth.Controls.Add(this.scaleTextbox, 0, 1);
             this.DepatmentOfHealth.Location = new System.Drawing.Point(72, 439);
             this.DepatmentOfHealth.Name = "DepatmentOfHealth";
             this.DepatmentOfHealth.RowCount = 2;
@@ -76,7 +76,7 @@
             this.scaleTextbox.Enabled = false;
             this.scaleTextbox.Location = new System.Drawing.Point(3, 107);
             this.scaleTextbox.Name = "scaleTextbox";
-            this.scaleTextbox.Size = new System.Drawing.Size(197, 53);
+            this.scaleTextbox.Size = new System.Drawing.Size(240, 53);
             this.scaleTextbox.TabIndex = 2;
             // 
             // scale
@@ -131,7 +131,7 @@
             // 
             this.Height.Location = new System.Drawing.Point(322, 133);
             this.Height.Name = "Height";
-            this.Height.Size = new System.Drawing.Size(242, 53);
+            this.Height.Size = new System.Drawing.Size(322, 53);
             this.Height.TabIndex = 4;
             this.Height.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Height_KeyPress);
             // 
