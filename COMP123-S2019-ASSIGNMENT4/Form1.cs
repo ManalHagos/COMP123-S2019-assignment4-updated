@@ -26,13 +26,17 @@ namespace COMP123_S2019_ASSIGNMENT4
             InitializeComponent();
         }
 
-        
+        /// <summary>
+        /// input height , weight
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
             double height = Convert.ToDouble(Height.Text);
             double weight = Convert.ToDouble(Weight.Text);
-
+         /// calculate bmi with displaying message
             double BMI = weight * (_isMetric == true ? 1 : 703) / Math.Pow(height, 2);
             result.Text = BMI.ToString("f3");
             if(BMI>=30)
@@ -58,7 +62,11 @@ namespace COMP123_S2019_ASSIGNMENT4
             }
 
         }
-
+        /// <summary>
+        /// if the user choose imperial
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ImperialButton_CheckedChanged(object sender, EventArgs e)
         {
             _isMetric = false;
@@ -77,7 +85,7 @@ namespace COMP123_S2019_ASSIGNMENT4
         }
 
        
-
+        // to accept just number , . input 
         private void Height_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar)|| char.IsControl (e.KeyChar)||char.IsPunctuation(e.KeyChar)) 
@@ -101,5 +109,17 @@ namespace COMP123_S2019_ASSIGNMENT4
                 e.Handled = true;
             }
         }
+        /// <summary>
+        /// SplashScreen will appear for few seconds 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashScreen_Tick(object sender, EventArgs e)
+        {
+            
+            SplashScreen.Enabled = true;
+        }
+
+        
     }
 }

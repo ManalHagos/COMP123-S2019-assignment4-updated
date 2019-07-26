@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.DepatmentOfHealth = new System.Windows.Forms.TableLayoutPanel();
             this.theResult = new System.Windows.Forms.Label();
-            this.scaleTextbox = new System.Windows.Forms.TextBox();
             this.scale = new System.Windows.Forms.Label();
             this.resultTextbox = new System.Windows.Forms.TextBox();
+            this.scaleTextbox = new System.Windows.Forms.TextBox();
             this.ImperialButton = new System.Windows.Forms.RadioButton();
             this.MetricButton = new System.Windows.Forms.RadioButton();
             this.MyHeightLabel = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             this.Weight = new System.Windows.Forms.TextBox();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
+            this.SplashScreen = new System.Windows.Forms.Timer(this.components);
             this.DepatmentOfHealth.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,9 +59,9 @@
             this.DepatmentOfHealth.Location = new System.Drawing.Point(72, 439);
             this.DepatmentOfHealth.Name = "DepatmentOfHealth";
             this.DepatmentOfHealth.RowCount = 2;
-            this.DepatmentOfHealth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263F));
-            this.DepatmentOfHealth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.42105F));
-            this.DepatmentOfHealth.Size = new System.Drawing.Size(492, 196);
+            this.DepatmentOfHealth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.87755F));
+            this.DepatmentOfHealth.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.12245F));
+            this.DepatmentOfHealth.Size = new System.Drawing.Size(492, 174);
             this.DepatmentOfHealth.TabIndex = 0;
             // 
             // theResult
@@ -70,14 +72,6 @@
             this.theResult.Size = new System.Drawing.Size(133, 46);
             this.theResult.TabIndex = 1;
             this.theResult.Text = "Result";
-            // 
-            // scaleTextbox
-            // 
-            this.scaleTextbox.Enabled = false;
-            this.scaleTextbox.Location = new System.Drawing.Point(3, 107);
-            this.scaleTextbox.Name = "scaleTextbox";
-            this.scaleTextbox.Size = new System.Drawing.Size(240, 53);
-            this.scaleTextbox.TabIndex = 2;
             // 
             // scale
             // 
@@ -90,11 +84,19 @@
             // 
             // resultTextbox
             // 
-            this.resultTextbox.Location = new System.Drawing.Point(249, 107);
+            this.resultTextbox.Location = new System.Drawing.Point(249, 79);
             this.resultTextbox.Multiline = true;
             this.resultTextbox.Name = "resultTextbox";
             this.resultTextbox.Size = new System.Drawing.Size(240, 53);
             this.resultTextbox.TabIndex = 3;
+            // 
+            // scaleTextbox
+            // 
+            this.scaleTextbox.Enabled = false;
+            this.scaleTextbox.Location = new System.Drawing.Point(3, 79);
+            this.scaleTextbox.Name = "scaleTextbox";
+            this.scaleTextbox.Size = new System.Drawing.Size(240, 53);
+            this.scaleTextbox.TabIndex = 2;
             // 
             // ImperialButton
             // 
@@ -131,7 +133,7 @@
             // 
             this.Height.Location = new System.Drawing.Point(322, 133);
             this.Height.Name = "Height";
-            this.Height.Size = new System.Drawing.Size(322, 53);
+            this.Height.Size = new System.Drawing.Size(239, 53);
             this.Height.TabIndex = 4;
             this.Height.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Height_KeyPress);
             // 
@@ -148,13 +150,13 @@
             // 
             this.Weight.Location = new System.Drawing.Point(322, 216);
             this.Weight.Name = "Weight";
-            this.Weight.Size = new System.Drawing.Size(322, 53);
+            this.Weight.Size = new System.Drawing.Size(242, 53);
             this.Weight.TabIndex = 6;
             this.Weight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Weight_KeyPress);
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(44, 333);
+            this.CalculateButton.Location = new System.Drawing.Point(35, 328);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(386, 58);
             this.CalculateButton.TabIndex = 7;
@@ -167,16 +169,21 @@
             this.result.BackColor = System.Drawing.Color.Bisque;
             this.result.Enabled = false;
             this.result.ForeColor = System.Drawing.Color.Cornsilk;
-            this.result.Location = new System.Drawing.Point(469, 333);
+            this.result.Location = new System.Drawing.Point(440, 331);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(175, 53);
+            this.result.Size = new System.Drawing.Size(121, 53);
             this.result.TabIndex = 8;
+            // 
+            // SplashScreen
+            // 
+            this.SplashScreen.Interval = 400;
+            this.SplashScreen.Tick += new System.EventHandler(this.SplashScreen_Tick);
             // 
             // BMICalculatorApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 975);
+            this.ClientSize = new System.Drawing.Size(659, 646);
             this.Controls.Add(this.result);
             this.Controls.Add(this.ImperialButton);
             this.Controls.Add(this.CalculateButton);
@@ -216,6 +223,7 @@
         private System.Windows.Forms.Label theResult;
         private System.Windows.Forms.TextBox scaleTextbox;
         private System.Windows.Forms.TextBox resultTextbox;
+        private System.Windows.Forms.Timer SplashScreen;
     }
 }
 
