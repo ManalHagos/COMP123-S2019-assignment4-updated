@@ -97,7 +97,7 @@ namespace COMP123_S2019_ASSIGNMENT4
                 e.Handled = true;
             }
         }
-
+        // to accept just number , . input 
         private void Weight_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsPunctuation(e.KeyChar))
