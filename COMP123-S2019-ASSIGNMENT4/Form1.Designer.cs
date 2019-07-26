@@ -176,7 +176,7 @@
             // 
             // SplashScreen
             // 
-            this.SplashScreen.Interval = 400;
+            this.SplashScreen.Interval = 3000;
             this.SplashScreen.Tick += new System.EventHandler(this.SplashScreen_Tick);
             // 
             // BMICalculatorApp
